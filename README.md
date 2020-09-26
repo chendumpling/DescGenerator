@@ -1,2 +1,2 @@
-# texttohtml_natashaguitars
-Text To HTML for Natasha Guitars
+# texttohtml
+Text To HTML GUI.
