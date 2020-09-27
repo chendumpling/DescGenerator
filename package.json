@@ -1,0 +1,11 @@
+{
+    "name": "texttohtmlgui",
+    "version": "1.0.0",
+    "main": "main.js",
+    "devDependencies": {
+        "electron": "^10.1.2"
+    },
+    "scripts": {
+        "start": "electron ."
+    }
+}

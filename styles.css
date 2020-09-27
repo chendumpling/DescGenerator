@@ -1,0 +1,13 @@
+p {
+    margin-block-end: 0;
+}
+
+#inputted {
+    padding: 4px;
+    font-size: 18px;
+}
+
+#outputted {
+    padding: 4px;
+    font-size: 14px;
+}
