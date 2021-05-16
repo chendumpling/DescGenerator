@@ -3,67 +3,56 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Text to HTML</title>
+        <title>Avian Guitar Product HTML Generator</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         
         <div class="column">
-            <h3>Specifications</h3>
-            <div class="desc"><p id="specs1">Body shape</p></div>
-            <div class="inputbox"><input name="specs" placeholder="Body shape"></div>
+            <h3>1</h3>
+            <div class="desc"><p id="specs1">Soundboard</p></div>
+            <div class="inputbox"><input name="specs"></div>
 
-            <div class="desc"><p id="specs2">Soundboard</p></div>
-            <div class="inputbox"><input name="specs" placeholder="Soundboard material"></div>
-            
-            <div class="desc"><p id="specs3">Back/sides</p></div>
-            <div class="inputbox"><input name="specs" placeholder="Back/sides material"></div>
+            <div class="desc"><p id="specs2">Back/sides</p></div>
+            <div class="inputbox"><input name="specs"></div>
+
+            <div class="desc"><p id="specs3">Fingerboard</p></div>
+            <div class="inputbox"><input  name="specs"></div>
 
             <div class="desc"><p id="specs4">Neck</p></div>
-            <div class="inputbox"><input name="specs" placeholder="Neck material"></div>
+            <div class="inputbox"><input name="specs"></div>
+            
+            <div class="desc"><p id="specs5">Machine heads</p></div>
+            <div class="inputbox"><input name="specs"></div>
 
-            <div class="desc"><p id="specs5">Fingerboard</p></div>
-            <div class="inputbox"><input  name="specs" placeholder="Fingerboard material"></div>
+            <div class="desc"><p id="specs6">Frets</p></div>
+            <div class="inputbox"><input name="specs"></div>
 
-            <div class="desc"><p id="specs6">Headstock</p></div>
-            <div class="inputbox"><input name="specs" placeholder="Headstock material"></div>
-
-            <div class="desc"><p id="specs7">Nut & saddle</p></div>
-            <div class="inputbox"><input name="specs" placeholder="Nut & saddle material"></div>
+            <div class="desc"><p id="specs7">Binding</p></div>
+            <div class="inputbox"><input name="specs"></div>
         </div>
 
         <div class="column">
-            <h3>Details</h3>
-            <div class="desc"><p id="details1">Tuning head</p></div>
-            <div class="inputbox"><input id="inputted" name="details" placeholder="Tuning head name"></div>
-            
-            <div class="desc"><p id="details2">Nut width</p></div>
-            <div class="inputbox"><input name="details" placeholder="Nut width"></div>
+            <h3>2</h3>
 
-            <div class="desc"><p id="details3">Headstock logo</p></div>
-            <div class="inputbox"><input name="details" placeholder="Headstock logo material"></div>
+            <div class="desc"><p id="specs8">Strings</p></div>
+            <div class="inputbox"><input name="specs"></div>
 
-            <div class="desc"><p id="details4">Fingerboard inlay</p></div>
-            <div class="inputbox"><input name="details" placeholder="Fingerboard inlay material"></div>
+            <div class="desc"><p id="specs9">Nut width</p></div>
+            <div class="inputbox"><input name="specs"></div>
 
-            <div class="desc"><p id="details5">Soundhole rosette</p></div>
-            <div class="inputbox"><input name="details" placeholder="Soundhole rosette material"></div>
+            <div class="desc"><p id="specs10">Scale length</p></div>
+            <div class="inputbox"><input name="specs"></div>
 
-            <div class="desc"><p id="details6">Purfling & binding</p></div>
-            <div class="inputbox"><input name="details" placeholder="Purfling & binding material"></div>
-
-            <div class="desc"><p id="details7">Painting</p></div>
-            <div class="inputbox"><input name="details" placeholder="Painting (what is this)"></div>
         </div>
 
         <div class="column">
             <div>
-                <span><button id="copyClick">Copy text</button></span>
-                <span id="copyConfirmation">Copied!</span>
+                <span><button id="copyClick">Copy</button></span>
             </div>
             <textarea id="outputted" readonly></textarea>    
         </div>
-
+            <h3 style="margin-bottom:1em">Full Description</h3>
         <div id="preview"></div>
 
         <script>

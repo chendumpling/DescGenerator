@@ -1,24 +1,27 @@
 @font-face {
     font-family: previewFont;
-    src: url(fonts/Montserrat-Regular.ttf);
+    src: url(fonts/Judson-Regular.ttf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: previewFont;
-    src: url(fonts/Montserrat-SemiBold.ttf);
+    src: url(fonts/Judson-Regular.ttf);
     font-weight: 600;
 }
 
 body {
     padding: 10px;
     overflow-y: scroll;
+    background: #ffffff !important;
+    font-family: previewFont;
 }
 
 p {
     margin-block-start: 0;
     margin-block-end: 0;
     padding-bottom: 4px;
+    color: #000000;
 }
 
 h3 {
@@ -26,22 +29,23 @@ h3 {
 }
 
 table td {
-    border-top: 1px solid #999;
+    border-top: 1px solid #555;
     line-height: 22px;
     padding: 8px 8px 8px 0;
+    vertical-align: top;
 }
 
 table {
-    background-color: #fff;
-    border-width: 20px 34px;
+    background-color: #121212;
+    border-width: 10px 22px;
     padding: 30px !important;
     table-layout: fixed;
     border-collapse: collapse;
 }
 
 .tablediv {
-    padding: 16px 30px !important;
-    background-color: #fff;
+    padding: 0 !important;
+    background-color: #121212;
 }
 
 button {
@@ -54,6 +58,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     margin-bottom: 2px;
+    margin-right: 0.5em;
 }
 
 button:hover {
@@ -71,10 +76,6 @@ button:hover {
     height: 42em;
 }
 
-#copyConfirmation {
-    visibility: hidden;
-}
-
 .column {
     float: left;
     width: 18%;
@@ -82,10 +83,11 @@ button:hover {
 }
 
 #preview {
-    background-color: #f7f7f7;
+    background-color: #121212;
     padding: 30px !important;
     float: left;
     width: 46%;
+    color: #DDDDDD;
     font-family: previewFont;
 }
 
@@ -98,10 +100,16 @@ button:hover {
 .desc {
     padding-bottom: 0;
     line-height: 1em;
+    color: #000;
+}
+
+.vid {
+    padding-bottom: 0;
+    line-height: 1em;
 }
 
 .firstrow {
-    width: 11em !important;
+    width: 8em !important;
 }
 
 .reset {
@@ -110,7 +118,7 @@ button:hover {
 
 input {
     width: 100%;
-    padding: 9px 12px;
+    padding: 7px 10px;
     margin: 2px 0 1em 0;
     display: inline-block;
     border: 1px solid #777;

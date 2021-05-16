@@ -1,7 +1,7 @@
 {
     "name": "texttohtmlgui",
     "version": "1.0.0",
-    "description": "Generates HTML code and previews it from a variety of inputs. Created for a client who runs a guitar shopify store. Client gave permission for me to put the barebones code here.",
+    "description": "Generates HTML code and previews it from a variety of inputs. Created for Avian Guitars for use on their Shopify store.",
     "main": "main.js",
     "devDependencies": {
         "electron": "^10.1.2",

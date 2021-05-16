@@ -23,7 +23,8 @@ function copyToClipboard() {
     copyText.select();
     copyText.setSelectionRange(0, 99999); /*For mobile devices*/
     document.execCommand("copy");
-    document.getElementById("copyConfirmation").style.visibility = "visible";
+    document.getElementById("copyClick").style.backgroundColor = "#009900";
+    document.getElementById("copyClick").innerHTML = "Copied!";
 }
 
 /**
@@ -72,21 +73,15 @@ function createHTML() {
     result = "";
     
     //Changing HTML spacing here may result in error
-    var result = "<h3>Specifications</h3><style><!--.col1{font-weight:600;width:12em}" 
-    + ".table td{padding:8px 8px 8px 0!important;border-top:1px solid #999!important}"
-    + ".table tbody{padding:0!important}.table{border-width:20px 34px!important;"
-    + "table-layout:fixed}.tablediv{padding-left:0}.firstrow{font-weight:600;width:12em;"
+    var result = "<style><!--.col1{color:#FCDC97;width:9em}" 
+    + ".table td{background:#121212;padding:10px 10px 10px 0!important;border-top:1px solid #555!important;font-size:17px !important;}"
+    + ".table tbody{padding:0!important}.table{border-width:0px!important;margin:0;"
+    + "table-layout:fixed}.tablediv{padding-left:0}.table > tbody > tr:first-child > td{border-top:0!important}.firstrow{color:#FCDC97;width:9em;"
     + "border-top:0!important}.firstrow2{border-top:0!important}--></style>"
     + "<div class=\"tablediv\"><table width=\"100%\"><tbody>";
     result += updateHTML("specs");
-    result += "</tbody></table></div>";
-
-    if (document.getElementsByName('details')){
-        result += "<br><h3>Details</h3><div class=\"tablediv\"><table width=\"100%\"><tbody>"
-        result += updateHTML("details");
-    }
-
-    result += "</tbody></table></div>";
+    result += "</table>"
+    result += "</div>";
     return result;
 }
 
@@ -120,6 +115,8 @@ copyClick.addEventListener('click', function(){
 
 // Detect any change to input
 document.addEventListener('input', function(){
-   inputAndUpdate(); 
+    document.getElementById("copyClick").innerHTML = "Copy";
+    document.getElementById("copyClick").style.backgroundColor = "#BF6900";
+    inputAndUpdate(); 
 });
 

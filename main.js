@@ -19,7 +19,7 @@ function createWindow() {
             enableRemoteModule: true // allows for remotes to be created (ie new windows)
         },
         width: 1400, 
-        height: 620,
+        height: 650,
         resizable: false
     });
 
@@ -45,17 +45,23 @@ app.on('ready', function(){
     createWindow();
     const template = [
         {
-            label: 'Edit',
+            label: 'Tools',
             submenu: [
-                { role: 'undo' },
-                { role: 'redo' },
+                { 
+                    label: 'Undo',
+                    role: 'undo' 
+                },
+                { 
+                    label: 'Redo',
+                    role: 'redo' 
+                },
             ]
         },
         {
             label: 'Reset',
             submenu: [
                 {
-                    label: 'Clear all data',
+                    label: 'Reset form',
                     click: function(){
                         win.reload();
                     }
@@ -67,8 +73,8 @@ app.on('ready', function(){
             click: function(){
                 const { dialog } = require('electron');
                 dialog.showMessageBox({
-                    title: `About ${app.getName()}`,
-                    detail: "Created by Robert Chen\nhttps://github.com/chendumpling99/"
+                    title: `About`,
+                    detail: "Built for use by Avian Guitars\nProgrammed by ZiHao Wang"
                 });
             }
         }
@@ -78,8 +84,16 @@ app.on('ready', function(){
 
     //Right-click menu
     const ctxMenu = new Menu();
-    ctxMenu.append(new MenuItem({role: 'undo'}));
-    ctxMenu.append(new MenuItem({role: 'redo'}));
+    ctxMenu.append(new MenuItem(
+        { 
+            label: 'Undo',
+            role: 'undo' 
+        }));
+    ctxMenu.append(new MenuItem(
+        { 
+            label: 'Redo',
+            role: 'redo' 
+        }));
     win.webContents.on('context-menu', function(event, params){
         //Params are where the right mouse button was clicked
         ctxMenu.popup(win, params.x, params.y)
