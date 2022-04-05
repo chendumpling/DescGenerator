@@ -9,5 +9,5 @@ See the [LICENSE](https://github.com/chendumpling/DescGenerator/blob/master/LICE
 
 ## Authors
 
-  - **ZiHao Wang** -
-    [chendumpling99](https://github.com/chendumpling)
+  - **Robert Chen** -
+    [chendumpling](https://github.com/chendumpling)
